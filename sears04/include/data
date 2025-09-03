@@ -1,0 +1,22 @@
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+vel 	30;
+AoA 	2;
+C 	1.00;
+
+Ux 	#calc "$vel*cos($AoA*M_PI/180)";
+Uy 	#calc "$vel*sin($AoA*M_PI/180)";
+
+Lx 	#calc "-sin($AoA*M_PI/180)";
+Ly 	#calc " cos($AoA*M_PI/180)";
+
+Dx 	#calc " cos($AoA*M_PI/180)";
+Dy 	#calc " sin($AoA*M_PI/180)";
+
+freq	#calc "12/M_PI";
+
+Ax	0;
+
+Ay	1.05;
+
+// ************************************************************************* //
